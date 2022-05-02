@@ -7,7 +7,9 @@ import Cover from "./Cover";
 import SpeakerNotes from "./SpeakerNotes";
 import Step from "./Step";
 import Steps from "./Steps";
-import AdamTestPage from "./content/AdamTestPage";
+import ReactTechStack from "./content/ReactTechStack";
+import IIIFTechStack from "./content/IIIFTechStack";
+import StyledTechStack from "./content/StyledTechStack";
 import { motion } from "framer-motion";
 
 const mdComponents = {
@@ -31,7 +33,9 @@ const mdComponents = {
   Step,
   Steps,
   motion,
-  AdamTestPage,
+  ReactTechStack,
+  IIIFTechStack,
+  StyledTechStack,
 };
 
 export default ({ children }) => (
