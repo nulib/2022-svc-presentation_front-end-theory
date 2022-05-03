@@ -1,8 +1,8 @@
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import okaidia from "react-syntax-highlighter/dist/cjs/styles/prism/okaidia";
+import material from "react-syntax-highlighter/dist/cjs/styles/prism/material-oceanic";
 
 const CodeSample = ({ children }) => (
-  <SyntaxHighlighter language="javascript" style={okaidia}>
+  <SyntaxHighlighter language="javascript" style={material}>
     {children}
   </SyntaxHighlighter>
 );
