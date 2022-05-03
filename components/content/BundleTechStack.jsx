@@ -1,11 +1,12 @@
 import React from "react";
 import Image from "next/image";
-import testImg from "../../public/images/npm-clover.jpg";
+import testImg from "../../public/images/npm-clover2.png";
 import CodeSample from "./CodeSample";
 import { Col, TwoColLayout } from "./Cols";
 
 const codeSample = `
-import BloomIIIF from '@samvera/bloom-iiif';
+import BloomIIIF 
+    from '@samvera/bloom-iiif';
 ...
 <BloomIIIF collectionId={manifestURI} />
 `;

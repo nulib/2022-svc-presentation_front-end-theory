@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import testImg from "../../public/images/flat-manifest.jpg";
+import testImg from "../../public/images/flat-manifest.png";
 import { Col, TwoColLayout } from "./Cols";
 import styled from "styled-components";
 

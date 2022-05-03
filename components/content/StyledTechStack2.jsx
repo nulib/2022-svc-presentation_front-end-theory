@@ -1,18 +1,17 @@
 import React from "react";
 import Image from "next/image";
-import testImg from "../../public/images/clover-screenshot-radix2.png";
+import testImg from "../../public/images/clover-screenshot-radix3.png";
 import CodeSample from "./CodeSample";
 import { Col, TwoColLayout } from "./Cols";
 
 const codeStr = `
 type ButtonComponentProps = 
-    React
-    .ButtonHTMLAttributes<HTMLButtonElement>;
+  React.ButtonHTMLAttributes<HTMLButtonElement>;
 
 export const Button 
     = (props: ButtonComponentProps) => {
   return <button type="button" 
-            role="button" {...props} />;
+    role="button" {...props} />;
 };
 `;
 
