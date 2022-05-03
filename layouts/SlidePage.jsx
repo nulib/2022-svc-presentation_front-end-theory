@@ -141,18 +141,23 @@ const GlobalStyle = createGlobalStyle`
   pre {
     font-size: 0.75em !important;
 
-    display: inline-block;
+    display: inline-flex;
     overflow-x: scroll;
 
-    margin: 2rem 0;
+    margin: 2rem 1rem;
 
     text-align: left;
 
     color: var(--accent);
+    border-radius: 5px;
   }
 
   code {
     font-family: menlo, monospace;
+  }
+
+  pre > code {
+    margin-bottom: -1.45rem;
   }
 
   a:hover {
@@ -210,6 +215,23 @@ const GlobalStyle = createGlobalStyle`
 
   header span {
     color: var(--text);
+  }
+
+  .nectar-metadata {
+
+  }
+
+  .nectar-metadata dt {
+    font-weight: 400;
+    margin: 0.5rem 0 0.15rem;
+    text-transform: uppercase;
+    font-size: 0.611rem;
+    opacity: 0.618;
+    letter-spacing: 0.05em;
+  }
+
+  .nectar-metadata dd {
+    margin: 0;
   }
 `;
 

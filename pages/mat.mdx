@@ -1,4 +1,4 @@
-<SlidePage next="page-2">
+<SlidePage>
     
 <Cover>
 
@@ -7,5 +7,146 @@
 Componentized, IIIF aware building blocks ?
 
 </Cover>
+
+---
+
+<div>
+  <CloverExample />
+</div>
+
+---
+
+### Label
+
+<div>
+  <NectarLabel as="h1" />
+</div>
+
+```jsx
+<Label as="h1" label={manifest.label} />
+```
+
+---
+
+### Label
+
+<div style={{ marginBottom: "1rem" }}>
+  <NectarLabel
+    as="span"
+    aria-level="3"
+    role="heading"
+    style={{ color: "#ffcb6b", fontWeight: "700" }}
+  />
+</div>
+
+```jsx
+<Label
+  as="span"
+  aria-level="3"
+  role="heading"
+  style={{ color: "#ffcb6b", fontWeight: "700" }}
+  label={manifest.label}
+/>
+```
+
+---
+
+### Summary
+
+<div
+  style={{
+    textOverflow: "ellipsis",
+    whiteSpace: "nowrap",
+    overflow: "hidden",
+  }}
+>
+  <NectarSummary />
+</div>
+
+```jsx
+<Summary as="p" summary={manifest.summary} />
+```
+
+---
+
+### Metadata
+
+<div
+  style={{
+    height: "375px",
+    width: "58%",
+    overflow: "hidden",
+    textAlign: "left",
+    display: "block",
+    margin: "1rem auto",
+    fontSize: "1rem",
+  }}
+>
+  <NectarMetadata />
+</div>
+
+```jsx
+<Metadata metadata={manifest.metadata} />
+```
+
+---
+
+### Metadata Styling
+
+<div
+  style={{
+    height: "390px",
+    width: "58%",
+    overflow: "hidden",
+    textAlign: "left",
+    display: "block",
+    margin: "1rem auto",
+    fontSize: "1rem",
+  }}
+>
+  <NectarMetadata className="nectar-metadata" />
+</div>
+
+```jsx
+<Metadata metadata={manifest.metadata} className="my-metadata-class" />
+```
+
+---
+
+### Thumbnail
+
+<div>
+  <NectarThumbnail />
+</div>
+
+```jsx
+<Thumbnail thumbnail={manifest.thumbnail} />
+```
+
+---
+
+```jsx
+/**
+ * Usage with an HTML figure element
+ */
+<figure>
+  <Thumbnail
+    alt="my description of this"
+    style={{ width: "200px" }}
+    thumbnail={manifest.thumbnail}
+  />
+  <figcaption>
+      <Label as="span" label={{manifest.label}} />
+  </figcaption>
+</figure>
+```
+
+---
+
+<div style={{ backgroundColor: "white", padding: "0 1rem" }}>
+  <BloomExample />
+</div>
+
+---
 
 </SlidePage>

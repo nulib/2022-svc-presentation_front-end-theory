@@ -11,6 +11,9 @@
   "dependencies": {
     "@mdx-js/loader": "^1.6.22",
     "@next/mdx": "^11.0.1",
+    "@samvera/bloom-iiif": "^0.0.4",
+    "@samvera/clover-iiif": "^1.10.1",
+    "@samvera/nectar-iiif": "^0.0.7",
     "framer-motion": "^4.1.17",
     "next": "11.0.1",
     "react": "17.0.2",

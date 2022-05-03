@@ -1,7 +1,7 @@
 import React from "react";
 import { MDXProvider } from "@mdx-js/react";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import okaidia from "react-syntax-highlighter/dist/cjs/styles/prism/okaidia";
+import material from "react-syntax-highlighter/dist/cjs/styles/prism/material-oceanic";
 import SlidePage from "../layouts/SlidePage";
 import Cover from "./Cover";
 import SpeakerNotes from "./SpeakerNotes";
@@ -10,6 +10,14 @@ import Steps from "./Steps";
 import ReactTechStack from "./content/ReactTechStack";
 import IIIFTechStack from "./content/IIIFTechStack";
 import StyledTechStack from "./content/StyledTechStack";
+import BloomExample from "./content/BloomExample";
+import CloverExample from "./content/CloverExample";
+import {
+  NectarLabel,
+  NectarMetadata,
+  NectarSummary,
+  NectarThumbnail,
+} from "./content/NectarExample";
 import { motion } from "framer-motion";
 
 const mdComponents = {
@@ -22,7 +30,7 @@ const mdComponents = {
       <SyntaxHighlighter
         className={className}
         language={language}
-        style={okaidia}
+        style={material}
         {...props}
       />
     );
@@ -36,6 +44,12 @@ const mdComponents = {
   ReactTechStack,
   IIIFTechStack,
   StyledTechStack,
+  BloomExample,
+  CloverExample,
+  NectarLabel,
+  NectarMetadata,
+  NectarSummary,
+  NectarThumbnail,
 };
 
 export default ({ children }) => (
