@@ -16,11 +16,11 @@
 
 ---
 
-<Intro image="work" />
+<Intro image="wireframe" />
 
 ---
 
-<Intro image="work-annotated" />
+<Intro image="annotated" />
 
 ---
 
@@ -35,135 +35,21 @@
     "none": ["Pantalone classico"]
   }
   ...
+}
 ```
 
 ---
 
-### Label
+<NectarThumbnail />
 
-<div>
-  <NectarLabel as="h1" />
-</div>
+<NectarLabel as="h2" />
 
-```jsx
-<Label as="h1" label={manifest.label} />
-```
+1. [Digital Collections](https://dc.library.northwestern.edu/items/7298fdce-adc1-4501-9e14-9e8bd985e149) (current)
+2. [Mirador](https://projectmirador.org/embed/?iiif-content=https://acw5dcf49d.execute-api.us-east-1.amazonaws.com/dev/items/iiif-image-manifest-1)
+3. [CodeSandbox](https://codesandbox.io/s/the-front-end-theory-bsnyqe?file=/src/App.jsx) (as Clover, Bloom, and Nectar)
 
 ---
 
-### Label
-
-<div style={{ marginBottom: "1rem" }}>
-  <NectarLabel
-    as="span"
-    aria-level="3"
-    role="heading"
-    style={{ color: "#ffcb6b", fontWeight: "700" }}
-  />
-</div>
-
-```jsx
-<Label
-  as="span"
-  aria-level="3"
-  role="heading"
-  style={{ color: "#ffcb6b", fontWeight: "700" }}
-  label={manifest.label}
-/>
-```
-
----
-
-### Summary
-
-<div
-  style={{
-    textOverflow: "ellipsis",
-    whiteSpace: "nowrap",
-    overflow: "hidden",
-  }}
->
-  <NectarSummary />
-</div>
-
-```jsx
-<Summary as="p" summary={manifest.summary} />
-```
-
----
-
-### Metadata
-
-<div
-  style={{
-    height: "375px",
-    width: "58%",
-    overflow: "hidden",
-    textAlign: "left",
-    display: "block",
-    margin: "1rem auto",
-    fontSize: "1rem",
-  }}
->
-  <NectarMetadata />
-</div>
-
-```jsx
-<Metadata metadata={manifest.metadata} />
-```
-
----
-
-### Metadata Styling
-
-<div
-  style={{
-    height: "390px",
-    width: "58%",
-    overflow: "hidden",
-    textAlign: "left",
-    display: "block",
-    margin: "1rem auto",
-    fontSize: "1rem",
-  }}
->
-  <NectarMetadata className="nectar-metadata" />
-</div>
-
-```jsx
-<Metadata metadata={manifest.metadata} className="my-metadata-class" />
-```
-
----
-
-### Thumbnail
-
-<div>
-  <NectarThumbnail />
-</div>
-
-```jsx
-<Thumbnail thumbnail={manifest.thumbnail} />
-```
-
----
-
-```jsx
-/**
- * Usage with an HTML figure element
- */
-<figure>
-  <Thumbnail
-    alt="my description of this"
-    style={{ width: "200px" }}
-    thumbnail={manifest.thumbnail}
-  />
-  <figcaption>
-      <Label as="span" label={{manifest.label}} />
-  </figcaption>
-</figure>
-```
-
----
+<Intro image="ecosystem" />
 
 </SlidePage>
