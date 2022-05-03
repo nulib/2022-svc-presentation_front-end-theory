@@ -1,7 +1,6 @@
 import React from "react";
 import Image from "next/image";
 import testImg from "../../public/images/flat-manifest.jpg";
-import CodeSample from "./CodeSample";
 import { Col, TwoColLayout } from "./Cols";
 import styled from "styled-components";
 
@@ -33,12 +32,14 @@ const IIIFTechStack = () => (
     </Col>
     <Col>
       <h2>@iiif-commons Helpers</h2>
+      <p>@iiif-vault</p>
       <ul>
         <li>Normalizes data</li>
-        <li>IIIF Presentation 3.0 default</li>
-        <li>Type safe! (Don't make the UI guess)</li>
+        <li>@iiif-vault IIIF Presentation 3.0 default</li>
       </ul>
-      <CodeSample>{codeSample}</CodeSample>
+      <p>@iiif/presentation-3</p>
+      <li>Type safe! (Don't make the UI guess)</li>
+      {/* <CodeSample>{codeSample}</CodeSample> */}
     </Col>
   </TwoColLayout>
 );

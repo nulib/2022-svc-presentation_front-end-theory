@@ -5,7 +5,9 @@ import CodeSample from "./CodeSample";
 import { Col, TwoColLayout } from "./Cols";
 
 const codeSample = `
-
+import BloomIIIF from '@samvera/bloom-iiif';
+...
+<BloomIIIF collectionId={manifestURI} />
 `;
 
 const BundleTechStack = () => (
@@ -14,9 +16,9 @@ const BundleTechStack = () => (
       <Image src={testImg} />
     </Col>
     <Col>
-      <h2>Package</h2>
+      <h2>ESBuild / Rollup</h2>
       <p>
-        ESBuild and/or Rollup bundles the code for browser and Node environments
+        Bundles the code for browser and Node environments. Distribute via NPM.
       </p>
       <p>Goals:</p>
       <ul>

@@ -26,12 +26,14 @@ const StyledTechStack2 = () => (
       </Col>
       <Col>
         <h2>Radix UI</h2>
+        <p>
+          Building blocks. Unstyled, primitive UI components built on web
+          standards.
+        </p>
         <ul>
-          <li>Unstyled, primitive UI components build on web standards</li>
           <li>WAI-ARIA compliant</li>
           <li>Accessibility out of the box</li>
-          <li>Extend with theming/customization</li>
-          <li>Framework agnostic</li>
+          <li>Composable (great for component libraries)</li>
         </ul>
         <CodeSample>{codeStr}</CodeSample>
       </Col>

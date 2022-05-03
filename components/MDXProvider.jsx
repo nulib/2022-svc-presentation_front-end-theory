@@ -23,6 +23,7 @@ import {
 } from "./content/NectarExample";
 import StyledTechStack2 from "./content/StyledTechStack2";
 import BundleTechStack from "./content/BundleTechStack";
+import NuraxReact from "./content/NuraxReact";
 import { motion } from "framer-motion";
 
 const mdComponents = {
@@ -60,6 +61,7 @@ const mdComponents = {
   ProblemStatement,
   StyledTechStack2,
   BundleTechStack,
+  NuraxReact,
 };
 
 export default ({ children }) => (

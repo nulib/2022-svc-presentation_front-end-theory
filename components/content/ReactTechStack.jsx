@@ -6,7 +6,7 @@ import { Col, TwoColLayout } from "./Cols";
 
 const codeSample = `
 import CloverIIIF from 
-  '@samvera-labs/clover-iiif'
+  '@samvera/clover-iiif'
 `;
 
 const ReactTechStack = () => (
@@ -15,15 +15,14 @@ const ReactTechStack = () => (
       <Image src={testImg} />
     </Col>
     <Col>
-      <h2>React</h2>
+      <h2>React / TypeScript</h2>
+      <p>Library of choice to build components</p>
       <ul>
-        <li>Develop performant UI components</li>
-        <li>Manage state of the application's data</li>
-        <li>Event handling</li>
-        <li>
-          Exports a top-level component, which your application can import
-        </li>
+        <li>Manage application state and event handling</li>
+        <li>Export type definitions (new)</li>
+        <li>Test coverage</li>
       </ul>
+      <p>Exports a top-level component, which your application can import</p>
       <CodeSample>{codeSample}</CodeSample>
     </Col>
   </TwoColLayout>
