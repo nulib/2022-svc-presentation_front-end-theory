@@ -13,7 +13,7 @@ import { MODES } from "../constants/modes";
 
 const GlobalStyle = createGlobalStyle`
   :root {
-    --bg: #050505;
+    --bg: #000;
     --meta: #888;
     --accent: rgb(0, 92, 221);
     --text: #FAFAFA;

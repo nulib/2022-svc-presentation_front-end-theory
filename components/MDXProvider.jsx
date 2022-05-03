@@ -10,6 +10,9 @@ import Steps from "./Steps";
 import ReactTechStack from "./content/ReactTechStack";
 import IIIFTechStack from "./content/IIIFTechStack";
 import StyledTechStack from "./content/StyledTechStack";
+import Tribe from "./content/Tribe";
+import Intro from "./content/Intro";
+import ProblemStatement from "./content/ProblemStatement";
 import BloomExample from "./content/BloomExample";
 import CloverExample from "./content/CloverExample";
 import {
@@ -50,6 +53,9 @@ const mdComponents = {
   NectarMetadata,
   NectarSummary,
   NectarThumbnail,
+  Tribe,
+  Intro,
+  ProblemStatement,
 };
 
 export default ({ children }) => (
