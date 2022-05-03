@@ -18,11 +18,11 @@ const StyledTechStack = () => (
       <Image src={testImg} />
     </Col>
     <Col>
-      <h2>Stitches</h2>
+      <h2>Stitches.dev</h2>
       <ul>
         <li>CSS / Styling</li>
         <li>CSS-in-JS with near-zero runtime</li>
-        <li>Theming</li>
+        <li>Theming / variants</li>
         <li>Framework agnostic</li>
       </ul>
       <CodeSample>{codeStr}</CodeSample>

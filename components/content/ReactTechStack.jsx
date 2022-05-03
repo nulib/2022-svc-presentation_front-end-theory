@@ -4,6 +4,11 @@ import testImg from "../../public/images/clover-screenshot-react.png";
 import CodeSample from "./CodeSample";
 import { Col, TwoColLayout } from "./Cols";
 
+const codeSample = `
+import CloverIIIF from 
+  '@samvera-labs/clover-iiif'
+`;
+
 const ReactTechStack = () => (
   <TwoColLayout>
     <Col>
@@ -12,15 +17,14 @@ const ReactTechStack = () => (
     <Col>
       <h2>React</h2>
       <ul>
-        <li>Creates performant UI components</li>
-        <li>Manages state of the application's data</li>
+        <li>Develop performant UI components</li>
+        <li>Manage state of the application's data</li>
+        <li>Event handling</li>
         <li>
           Exports a top-level component, which your application can import
         </li>
       </ul>
-      <CodeSample>
-        import CloverIIIF from '@samvera-labs/clover-iiif'
-      </CodeSample>
+      <CodeSample>{codeSample}</CodeSample>
     </Col>
   </TwoColLayout>
 );
