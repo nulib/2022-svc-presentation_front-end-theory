@@ -1,93 +1,132 @@
-<SlidePage next="page-2">
+<SlidePage>
     
 <Cover>
 
-# The Front End Theory
-
-Componentized, IIIF aware building blocks ?
+<Tribe />
 
 </Cover>
 
 ---
 
-1. Our manager asked us to speak about Clover, but...
-1. DC + Mirador demoing
-1. How do we set this stuff up?
-1. What are our packages and who can use them?
-1. How does this connect to the IIIF Community?
+<NectarThumbnail />
 
-<SpeakerNotes>
-    
-Private notes here.
+<NectarLabel as="h2" />
 
-You can write an extremely long note and it'll still display inside of the presenter mode.
-
-# Even Markdown!
-
-- Just
-- do
-- it
-
-</SpeakerNotes>
+1. [Digital Collections](https://dc.library.northwestern.edu/items/7298fdce-adc1-4501-9e14-9e8bd985e149) (current)
+2. [Mirador](https://projectmirador.org/embed/?iiif-content=https://acw5dcf49d.execute-api.us-east-1.amazonaws.com/dev/items/iiif-image-manifest-1)
 
 ---
 
-> Inscrutable icons litter the face of the devices even though the research
-> community has long demonstrated that people cannot remember the meaning of
-> more than a small number of icons […] Who can remember what each icon
-> means? Not me.
->
-> <cite>Don Norman</cite>
+## <Intro image="ecosystem" />
+
+---
+
+## Process
+
+1. Refreshing Northwestern Digital Collections
+2. Redesigning our search, work, and collection API
+3. Wondered, "why not IIIF?"
+
+---
+
+<Intro image="wireframe" />
+
+---
+
+<Intro image="annotated" />
+
+---
+
+```html
+<main><!--- insert manifest ---></main>
+```
+
+1. One viewer cannot handle it all
+2. Explode the manifest, drop the monolith viewer
+3. The IIIF _viewer_ is the `<main>`
+
+---
+
+<ProblemStatement />
+
+```json
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://acw5dcf49d.execute-api.us-east-1.amazonaws.com/dev/items/iiif-image-manifest-1",
+  "type": "Manifest",
+  "label": {
+    "none": ["Pantalone classico"]
+  }
+  ...
+}
+```
+
+---
+
+<NectarThumbnail />
+
+<NectarLabel as="h2" />
+
+1. [CodeSandbox](https://codesandbox.io/s/the-front-end-theory-bsnyqe?file=/src/App.jsx)
 
 ---
 
 # How do we set this stuff up?
 
+---
+
+# Standards
+
 <Steps>
   <Step>JavaScript</Step>
-  <Step>React</Step>
+  <Step>Web/Browser API</Step>
+</Steps>
+
+---
+
+# Established, community vetted projects
+
+<Steps>
   <Step>ESBuild</Step>
   <Step>NextJS</Step>
+  <Step>React</Step>
+  <Step>TypeScript</Step>
+</Steps>
+
+<SpeakerNotes>
+  All of our UI components and single page apps are built independently, and we
+  aim to strike a balance between standards (Javascript / Web/Browser API),
+  established community-vetted open source projects (React/ESBuild). blending in
+  some newer experimental packages.
+</SpeakerNotes>
+
+---
+
+# Promising new technologies
+
+<Steps>
+  <Step>@iiif/vault</Step>
+  <Step>@iiif/presentation-3</Step>
   <Step>Radix UI</Step>
   <Step>Stitches (CSS and styling)</Step>
 </Steps>
 
 ---
 
-Custom component example where we can use things like
-
-```js
-Next Image
-```
-
 <ReactTechStack />
+
+---
+
+<StyledTechStack />
+
+---
+
+<IIIFTechStack />
 
 ---
 
 # Where are our packages and who can use them?
 
 ---
-
-# 🤫
-
----
-
-<Steps>
-  <Step>Something</Step>
-  <Step>happens</Step>
-  <Step>one</Step>
-  <Step>by</Step>
-  <Step>one</Step>
-</Steps>
-
----
-
-## Slides are written in MDX!
-
-And code is highlighted using `react-syntax-highlighter`.
-
-```js
-const variable = someFunction();
-```
 
 </SlidePage>
