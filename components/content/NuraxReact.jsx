@@ -10,7 +10,7 @@ const NuraxReact = () => (
     </div>
     <div>
       <h2>No!</h2>
-      <p>...kinda</p>
+      <p>...well maybe a little</p>
     </div>
   </TwoColLayout>
 );

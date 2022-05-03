@@ -21,11 +21,9 @@ const BundleTechStack = () => (
       <p>
         Bundles the code for browser and Node environments. Distribute via NPM.
       </p>
-      <p>Goals:</p>
-      <ul>
-        <li>Easy to import in your app</li>
-        <li>Easy (maybe fun) to use</li>
-      </ul>
+      <p>
+        <i>Simplify</i> a somewhat tricky process.
+      </p>
       <CodeSample>{codeSample}</CodeSample>
     </Col>
   </TwoColLayout>

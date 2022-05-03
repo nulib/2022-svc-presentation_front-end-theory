@@ -19,9 +19,10 @@ const StyledTechStack = () => (
     </Col>
     <Col>
       <h2>Stitches.dev</h2>
-      <p>Adds style to the UI</p>
+      <p>CSS / Styling for UI</p>
       <ul>
-        <li>CSS-in-JS with near-zero runtime</li>
+        <li>CSS-in-JS</li>
+        <li>Near-zero runtime</li>
         <li>Theming / variants</li>
         <li>Framework agnostic</li>
       </ul>

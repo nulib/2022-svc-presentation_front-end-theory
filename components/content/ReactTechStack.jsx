@@ -19,8 +19,7 @@ const ReactTechStack = () => (
       <p>Library of choice to build components</p>
       <ul>
         <li>Manage application state and event handling</li>
-        <li>Export type definitions (new)</li>
-        <li>Test coverage</li>
+        <li>TypeScript (new)</li>
       </ul>
       <p>Exports a top-level component, which your application can import</p>
       <CodeSample>{codeSample}</CodeSample>
