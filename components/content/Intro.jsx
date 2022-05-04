@@ -26,7 +26,7 @@ const Intro = ({ image }) => {
               <strong>Explode</strong> the manifest, think properties
             </li>
             <li>
-              The <em>viewer</em> is the <code>&lt;/main&gt;</code>
+              The <em>viewer</em> is the <code>&lt;main&gt;</code>
             </li>
             <li>IIIF properties translate as DOM elements</li>
           </ol>
