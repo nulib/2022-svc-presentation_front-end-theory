@@ -10,7 +10,13 @@ const Intro = ({ image }) => {
   switch (image) {
     case "explode":
       return (
-        <div style={{ display: "flex", alignItems: "center" }}>
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
           <div>
             <Image src={explode} />
           </div>
